@@ -25,11 +25,11 @@ public class MySqlDB {
         return mainDBConnection;
     }
 
-    public static SQLConnection selectDB(String name) throws DBException {
+    public static void selectDB(String name) throws DBException {
         if(!connections.containsKey(name)){
             throw new DBException();
         }
 
-        return connections.get(name);
+        mainDBConnection =  connections.get(name);
     }
 }
