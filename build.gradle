@@ -5,6 +5,12 @@ plugins {
 group 'fr.xilitra'
 version '1.0'
 
+sourceCompatibility = 1.8
+
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
+javadoc.options.encoding = 'UTF-8'
+
 repositories {
     mavenCentral()
     mavenLocal()
